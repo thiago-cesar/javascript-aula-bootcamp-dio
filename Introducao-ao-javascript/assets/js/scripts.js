@@ -12,6 +12,8 @@ function decrement(){
 
 const currentNumberWrapper1=document.getElementById("adicionar");
 currentNumberWrapper1.addEventListener("click",increment)
+
+
 const currentNumberWrapper2=document.getElementById("subtrair");
 currentNumberWrapper2.addEventListener("click",decrement)
 var incrementador=0;
@@ -22,6 +24,7 @@ function increment(){
     if(incrementador<10){
         incrementador=incrementador+1;
         document.getElementById("currentNumber").innerHTML=incrementador; 
+        
     }
     
 }
@@ -29,7 +32,10 @@ function increment(){
 function decrement(){
     incrementador=incrementador-1;
     document.getElementById("currentNumber").innerHTML=incrementador;
+  
     
 }
+
+
 
 
